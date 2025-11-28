@@ -12,8 +12,8 @@
    - Home page (/)
    - Registration page (/register)
    - Static resources (/static/.js, /static/.css) 
-- Exclusions:  
-- Test approach: Gray-box / Black-box / White-box
+- Exclusions: External services not hosted on localhost:8000, network infrastructure (routers, external firewalls).
+- Test approach: Gray-box
 
 **Test environment & dates:**  
 - Start:  27/11/2025
@@ -36,7 +36,7 @@
 **Short summary (1-2 sentences):** 
 The initial scan revealed several classic vulnerabilities affecting confidentiality and integrity (XSS, CSRF, insecure cookies), as well as issues with sensitive information exposed via headers and paths. These vulnerabilities can allow session hijacking, client-side script execution, and unauthorized access to booking data. 
 
-**Overall risk level:**  Medium
+**Overall risk level:**  High
 
 **Top 5 immediate actions:**  
 1.  Fix SQL Injection vulnerabilities
@@ -69,7 +69,7 @@ The initial scan revealed several classic vulnerabilities affecting confidential
 | F-02 | 🟠 Medium | Missing Anti-clickjacking Header |The response does not protect against 'ClickJacking' attacks | <img width="611" height="314" alt="Capture d&#39;écran 2025-11-28 175135" src="https://github.com/user-attachments/assets/bf4b8524-2bbf-4abe-95ab-94dae632df0c" /> |
 | F-03 | 🟠 Medium | Absence of Anti-CSRF Tokens | Registration form has no CSRF protection | <img width="529" height="293" alt="Capture d&#39;écran 2025-11-28 175120" src="https://github.com/user-attachments/assets/70d0d1cb-31dd-453d-96ba-614c6ca22023" /> |
 | F-04 | 🟠 Medium | Content Security Policy Missing | CSP header not set on / and /register | <img width="611" height="314" alt="Capture d&#39;écran 2025-11-28 175135" src="https://github.com/user-attachments/assets/78298be7-9e80-49a8-b3e0-7f98322c3cb4" /> |
-| F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | <img width="762" height="95" alt="Capture d&#39;écran 2025-11-28 172304" src="https://github.com/user-attachments/assets/ff2726c2-de2f-4f5c-a320-86b458cd20ed" /> |
+| F-05 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | <img width="762" height="95" alt="Capture d&#39;écran 2025-11-28 172304" src="https://github.com/user-attachments/assets/ff2726c2-de2f-4f5c-a320-86b458cd20ed" /> |
 
 
 ---
