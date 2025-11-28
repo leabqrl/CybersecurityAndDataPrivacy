@@ -4,10 +4,14 @@
 - Léa Becquerel
 
 **Purpose:**  
-- Describe the purpose of this test (e.g., identify vulnerabilities in registration and authentication flows).
+- Identify vulnerabilities in registration and authentication flows
+- Assess the backend’s resistance to common attack vectors 
 
 **Scope:**  
-- Tested components:  
+- Tested components:
+   - Home page (/)
+   - Registration page (/register)
+   - Static resources (/static/.js, /static/.css) 
 - Exclusions:  
 - Test approach: Gray-box / Black-box / White-box
 
@@ -56,7 +60,8 @@
 |------|-----------|----------|--------------|------------------|
 | F-01 | 🔴 High | SQL Injection in registration | Input field allows `' OR '1'='1` injection | Screenshot or sqlmap result |
 | F-02 | 🟠 Medium | Session fixation | Session ID remains unchanged after login | Burp log or response headers |
-| F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | Screenshot of registration success |
+| F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | <img width="762" height="95" alt="Capture d&#39;écran 2025-11-28 172304" src="https://github.com/user-attachments/assets/ff2726c2-de2f-4f5c-a320-86b458cd20ed" /> |
+
 
 ---
 
