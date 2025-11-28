@@ -14,4 +14,6 @@
 | 11.11.2025 | 2 | Intro to penetration testing | Course |
 | 12.11.2025 | 2 | authentication labs | completed : "Username enumeration via different responses" and "Password reset broken logic" |
 | 13.11.2025 | 1 | access control labs | completed : "Unprotected admin functionality" and "User role can be modified in user profile" |
+| 18.11.2025 | 2 | Intro to the booking system phase 1 -> part 2 | Course |
+| 20.11.2025 | 1 | Install Docter Desktop + ZAP | Docter Desktop + ZAP installed |
 | 27.11.2025 | 3 | Booking System - phase 1 | completed |
