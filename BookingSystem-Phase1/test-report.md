@@ -9,10 +9,12 @@
 
 **Scope:**  
 - Tested components:
-   - Home page (/)
-   - Registration page (/register)
-   - Static resources (/static/.js, /static/.css) 
-- Exclusions: External services not hosted on localhost:8000, network infrastructure (routers, external firewalls).
+   - Public root endpoint /
+   - Registration page /register
+   - Static assets under /static/*
+- Exclusions:
+   - Authenticated pages (none tested)
+   - API endpoints other than registration
 - Test approach: Gray-box
 
 **Test environment & dates:**  
@@ -39,11 +41,11 @@ The initial scan revealed several classic vulnerabilities affecting confidential
 **Overall risk level:**  High
 
 **Top 5 immediate actions:**  
-1.  Fix SQL Injection vulnerabilities
-2.  Prevent Path Traversal
-3.  Add CSRF protection
-4.  Configure essential security headers
-5.  Implement custom error
+1.  Fix SQL Injection vulnerability in the registration endpoint
+2.  Implement CSRF protection tokens across all forms
+3.  Add a strict Content-Security-Policy header
+4.  Add X-Frame-Options or CSP frame-ancestors to prevent clickjacking
+5.  Implement proper error handling to stop server error disclosure
 
 ---
 
@@ -65,7 +67,7 @@ The initial scan revealed several classic vulnerabilities affecting confidential
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
-| F-01 | 🔴 High | SQL Injection in registration | Input field allows `' OR '1'='1` injection | <img width="502" height="269" alt="Capture d&#39;écran 2025-11-28 175150" src="https://github.com/user-attachments/assets/ba131874-9342-4edf-8748-b6316602d9f6" /> |
+| F-01 | 🔴 High | SQL Injection in registration | Input field allows `' OR '1'='1` injection | <img width="380" height="302" alt="Capture d&#39;écran 2025-11-28 195148" src="https://github.com/user-attachments/assets/770e2eeb-9798-431b-b59b-f954eb6ea2d0" /> |
 | F-02 | 🟠 Medium | Missing Anti-clickjacking Header |The response does not protect against 'ClickJacking' attacks | <img width="611" height="314" alt="Capture d&#39;écran 2025-11-28 175135" src="https://github.com/user-attachments/assets/bf4b8524-2bbf-4abe-95ab-94dae632df0c" /> |
 | F-03 | 🟠 Medium | Absence of Anti-CSRF Tokens | Registration form has no CSRF protection | <img width="529" height="293" alt="Capture d&#39;écran 2025-11-28 175120" src="https://github.com/user-attachments/assets/70d0d1cb-31dd-453d-96ba-614c6ca22023" /> |
 | F-04 | 🟠 Medium | Content Security Policy Missing | CSP header not set on / and /register | <img width="611" height="314" alt="Capture d&#39;écran 2025-11-28 175135" src="https://github.com/user-attachments/assets/78298be7-9e80-49a8-b3e0-7f98322c3cb4" /> |
@@ -74,32 +76,7 @@ The initial scan revealed several classic vulnerabilities affecting confidential
 
 ---
 
-> [!NOTE]
-> Include up to 5 findings total.   
-> Keep each description short and clear.
-
----
-
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- Attach or link your OWASP ZAP scan results (Markdown format preferred).
-
----
-
-**Instructions (CMD version):**
-1. Run OWASP ZAP baseline scan:  
-   ```bash
-   zap-baseline.py -t https://example.com -r zap_report_round1.html -J zap_report.json
-   ```
-2. Export results to markdown:  
-   ```bash
-   zap-cli report -o zap_report_round1.md -f markdown
-   ```
-3. Save the report as `zap_report_round1.md` and link it below.
-
----
-> [!NOTE]
-> 📁 **Attach full report:** → `check itslearning` → **Add a link here**
-
----
+- https://github.com/leabqrl/CybersecurityAndDataPrivacy/blob/main/BookingSystem-Phase1/zap_report_round1.md
