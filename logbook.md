@@ -17,4 +17,4 @@
 | 18.11.2025 | 2 | Intro to the booking system phase 1 -> part 2 | Course |
 | 20.11.2025 | 1 | Install Docter Desktop + ZAP | Docter Desktop + ZAP installed |
 | 27.11.2025 | 3 | Booking System - phase 1 - part 1 | completed |
-| 02.12.2025 | 3 | Booking System - phase 1 - part 2 | completed |
+| 02.12.2025 | 2 | Booking System - phase 1 - part 2 | completed |
