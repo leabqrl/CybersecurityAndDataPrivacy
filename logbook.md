@@ -20,5 +20,8 @@
 | 27.11.2025 | 3 | Booking System - phase 1 - part 1 | completed |
 | 02.12.2025 | 2 | Booking System - phase 1 - part 2 | completed |
 | 04.12.2025 | 2 | Intro to authorization | Lecture |
-| 08.12.2025 | 1 | Booking System - phase 2 | up to step 2 |
+| 07.12.2025 | 1 | Booking System - phase 2 | up to step 2 |
 | 08.12.2025 | 3 | Booking System - phase 2 | completed |
+| 09.12.2025 | 1 | Intro the phase 3 | Lecture |
+| 11.12.2025 | 1 | Phase 4 and finalization of the course | Lecture |
+| 21.12.2025 | 1 | Final assignment | Write the final report |
