@@ -13,15 +13,15 @@
 | 10.11.2025 | 2 | SQL injection labs | completed : "SQL injection vulnerability in WHERE clause allowing retrieval of hidden data" and "SQL injection vulnerability allowing login bypass" |
 | 11.11.2025 | 2 | Intro to penetration testing | Lecture |
 | 12.11.2025 | 2 | authentication labs | completed : "Username enumeration via different responses" and "Password reset broken logic" |
-| 13.11.2025 | 1 | access control labs | completed : "Unprotected admin functionality" and "User role can be modified in user profile" |
+| 13.11.2025 | 2 | access control labs | completed : "Unprotected admin functionality" and "User role can be modified in user profile" |
 | 18.11.2025 | 2 | Intro to the booking system phase 1 -> part 2 | Lecture |
-| 20.11.2025 | 1 | Install Docter Desktop + ZAP | Docter Desktop + ZAP installed |
+| 20.11.2025 | 2 | Install Docter Desktop + ZAP | Docter Desktop + ZAP installed |
 | 24.11.2025 | 2 | Intro to anthentication | Lecture |
 | 27.11.2025 | 3 | Booking System - phase 1 - part 1 | completed |
 | 02.12.2025 | 2 | Booking System - phase 1 - part 2 | completed |
 | 04.12.2025 | 2 | Intro to authorization | Lecture |
-| 07.12.2025 | 1 | Booking System - phase 2 | up to step 2 |
+| 07.12.2025 | 2 | Booking System - phase 2 | up to step 2 |
 | 08.12.2025 | 3 | Booking System - phase 2 | completed |
 | 09.12.2025 | 1 | Intro the phase 3 | Lecture |
-| 11.12.2025 | 1 | Phase 4 and finalization of the course | Lecture |
-| 21.12.2025 | 1 | Final assignment | Write the final report |
+| 11.12.2025 | 2 | Phase 4 and finalization of the course | Lecture |
+| 21.12.2025 | 2 | Final assignment | Write the final report |
